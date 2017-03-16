@@ -1,0 +1,60 @@
+/* 16px == 1rem */
+.logo {
+  height: 60px;
+  float: left;
+}
+
+.main-header {
+  font-size: 2rem;
+  color: darkblue;
+  text-align: center;
+}
+
+.main-header:hover {
+    color: orange
+}
+
+.section-header {
+  font-size: 2rem;
+  color: darkblue;
+  text-align: center;
+}
+
+.section-header:hover {
+  color: purple;
+}
+
+.sample-title {
+  font-size: 1.5rem;
+  color: darkred;
+  text-align: center;
+}
+
+.sample-title::first-letter {
+  font-size: 3rem;
+}
+
+article {
+  border-style: inset;
+}
+
+.sample-body {
+  font-style: italic;
+}
+
+.images {
+  display: block;
+  margin: auto;
+  width: 10%;
+}
+
+.main-nav {
+  font-size: 1.5rem;
+  text-align: left;
+  font-family: monospace;
+}
+
+.sample-nav {
+  font-size:1.5rem;
+  font-family: monospace;
+}
