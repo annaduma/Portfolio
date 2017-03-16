@@ -1,17 +1,17 @@
 /* 16px == 1rem */
-.logo {
-  height: 60px;
-  float: left;
+.header-logo {
+  width: 100px;
+  top: 10px;
 }
 
-.main-header {
+.page-header {
   font-size: 2rem;
   color: darkblue;
   text-align: center;
 }
 
-.main-header:hover {
-    color: orange
+.page-header:hover {
+    color: orange;
 }
 
 .section-header {
@@ -48,7 +48,7 @@ article {
   width: 10%;
 }
 
-.main-nav {
+.page-nav {
   font-size: 1.5rem;
   text-align: left;
   font-family: monospace;
@@ -57,4 +57,12 @@ article {
 .sample-nav {
   font-size:1.5rem;
   font-family: monospace;
+}
+
+.sample-body {
+  color: green;
+}
+
+.footer {
+  font-style: italic;
 }
