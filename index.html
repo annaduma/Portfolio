@@ -9,10 +9,12 @@
   </head>
   <body>
 
-    <header>
+    <header class="main-header">
       <h1 class="page-header"><i class="fa fa-handshake-o" aria-hidden="true"></i><a id="top"></a>This is Anna's Portfolio Page</h1><br>
       <nav class="page-nav">
         <a href="about-me.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </header>
 
@@ -23,50 +25,62 @@
           Anna's portfolio samples are displayed below. Click on each link to access the project on github.
         </p>
         <nav class="sample-nav">
-          <a href="#week-1">Week 1</a><br>
-          <a href="#week-2">Week 2</a><br>
+          <a href="#week-1">Week 1 - Semantic Tags</a><br>
+          <a href="#week-2">Week 2 - Kitties To Go! Mockup</a><br>
           <a href="#week-3">Week 3</a>
         </nav>
       </section>
 
-      <article>
-        <h3 class="sample-title">Semantic Tags<a id="week-1"></a></h3>
-        <p class="sample-body">
-          Here is some week 1 sample content.
-        </p>
-        <img class="images" src="images/bunny.jpg" title="Bunny" alt="Week 1 Image" width="100">
-        <a target="_blank" title="Semantic Tags Assignment" href="https://github.com/annaduma/semantic_tags.git">Click to access GitHub code</a>
-        <p><a href="#top">Back to top</a></p>
-      </article>
+    <div class="container">
 
-      <article>
-        <h3 class="sample-title">Kitties To Go! Website Mockup<a id="week-2"></a></h3>
-        <p class="sample-body">
-          Here is some week 2 sample content.
-        </p>
-        <img class="images" src="images/dog.jpg" title="Dog" alt="Week 2 Image" width="100">
-        <a target="_blank" title="GitHub project" href="https://github.com/annaduma/mockup-practice">Click to access GitHub code</a>
-        <p><a href="#top">Back to top</a></p>
-      </article>
+      <div class="week-1">
+        <article>
+          <h3 class="sample-title">Semantic Tags<a id="week-1"></a></h3>
+          <p class="sample-body">
+            Here is some week 1 sample content.
+          </p>
+          <img class="images" src="images/bunny.jpg" title="Bunny" alt="Week 1 Image" width="100">
+          <a target="_blank" title="Semantic Tags Assignment" href="https://github.com/annaduma/semantic_tags.git">Click to access GitHub code</a>
+          <p><a href="#top">Back to top</a></p>
+        </article>
+      </div>
 
-      <article>
-        <h3 class="sample-title">Week 3 Sample<a id="week-3"></a></h3>
-        <p class="sample-body">
-          Here is some week 3 sample content.
-        </p>
-        <img class="images" src="images/potato.png" title="Potato" alt="Week 3 Image" width="100">
-        <a target="_blank" title="GitHub project" href="https://github.com/annaduma">Click to access GitHub code</a>
-        <p><a href="#top">Back to top</a></p>
-      </article>
+      <div class="week-2">
+        <article>
+          <h3 class="sample-title">Kitties To Go! Website Mockup<a id="week-2"></a></h3>
+          <p class="sample-body">
+            Here is some week 2 sample content.
+          </p>
+          <img class="images" src="images/dog.jpg" title="Dog" alt="Week 2 Image" width="100">
+          <a target="_blank" title="GitHub project" href="https://github.com/annaduma/mockup-practice">Click to access GitHub code</a>
+          <p><a href="#top">Back to top</a></p>
+        </article>
+      </div>
+
+      <div class="week-3">
+        <article>
+          <h3 class="sample-title">Week 3 Sample<a id="week-3"></a></h3>
+          <p class="sample-body">
+            Here is some week 3 sample content.
+          </p>
+          <img class="images" src="images/potato.png" title="Potato" alt="Week 3 Image" width="100">
+          <a target="_blank" title="GitHub project" href="https://github.com/annaduma">Click to access GitHub code</a>
+          <p><a href="#top">Back to top</a></p>
+        </article>
+      </div>
+
+      </div>
     </main>
+
+    <div class="social-media">
+      <a class="facebook-logo" target="_blank" title="Add me on Facebook" href="https://www.facebook.com/anna.duma.7"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
+      <a class="linkedin-logo" target="_blank" title="Connect on LinkedIn" href="https://www.linkedin.com/in/anna-duma-b9a94481/"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
+      <a class="github-logo" target="_blank" title="Check out my GitHub" href="https://github.com/annaduma"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+    </div>
 
     <footer class="footer">
       <p>Created by: Anna Duma</p>
-      <p>Contact information: <a href="mailto:aduma@uw.edu.com">aduma@uw.edu.com</a>.</p>
-      <a class="facebook-logo" target="_blank" title="Add me on Facebook" href="https://www.facebook.com/anna.duma.7"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-      <a class="linkedin-logo" target="_blank" title="Connect on LinkedIn" href="https://www.linkedin.com/in/anna-duma-b9a94481/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-      <a class="github-logo" target="_blank" title="Check out my GitHub" href="https://github.com/annaduma"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <p>Contact information: <a class="email" href="mailto:aduma@uw.edu.com">aduma@uw.edu.com</a>.</p>
     </footer>
-
   </body>
 </html>

@@ -1,21 +1,47 @@
 /* 16px == 1rem */
 * {
+  box-sizing: border-box;
   font-family: 'Lato', sans-serif;
 }
 
-.header-logo {
-  width: 100px;
-  top: 10px;
+html, body {
+  margin: 1;
+  padding: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+
+.main-header {
+  background-color: #313B74;
+  margin: 0;
+  padding-top: 1rem;
 }
 
 .page-header {
+  display: block;
+  width: 100%;
   font-size: 2rem;
-  color: darkblue;
+  color: white;
   text-align: center;
 }
 
 .page-header:hover {
     color: orange;
+}
+
+.page-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #5F6CB2;
+  margin: 0;
+  width: 100%;
 }
 
 .section-header {
@@ -46,6 +72,18 @@ article {
   font-style: italic;
 }
 
+.week-1 {
+  padding: 0.75rem 0;
+}
+
+.week-2 {
+  padding: 0.75rem 0;
+}
+
+.week-3 {
+  padding: 0.75rem 0;
+}
+
 .images {
   display: block;
   margin: auto;
@@ -53,14 +91,11 @@ article {
 }
 
 .page-nav {
-  font-size: 1.5rem;
   text-align: left;
   font-family: monospace;
 }
 
-.sample-nav {
-  font-size:1.5rem;
-  font-family: monospace;
+.sample-nav:nth-child(n+1) {
 }
 
 /*visited link*/
@@ -75,6 +110,19 @@ article {
 .github-logo {
   color: #181717;
 }
+
 .footer {
   font-style: italic;
+  background-color: #313B74;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+.email {
+  color: white;
+}
+
+.social-media {
+  margin: 0;
 }
