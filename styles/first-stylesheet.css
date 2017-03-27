@@ -1,4 +1,8 @@
 /* 16px == 1rem */
+* {
+  font-family: 'Lato', sans-serif;
+}
+
 .header-logo {
   width: 100px;
   top: 10px;
@@ -35,7 +39,7 @@
 }
 
 article {
-  border-style: inset;
+  border: solid black;
 }
 
 .sample-body {
@@ -59,10 +63,18 @@ article {
   font-family: monospace;
 }
 
-.sample-body {
-  color: green;
+/*visited link*/
+.facebook-logo:visited {
+  color: #3b5998;
 }
 
+.linkedin-logo:visited {
+  color: #0077B5;
+}
+
+.github-logo {
+  color: #181717;
+}
 .footer {
   font-style: italic;
 }
