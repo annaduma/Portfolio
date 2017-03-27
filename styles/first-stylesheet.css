@@ -66,28 +66,31 @@ html, body {
 
 article {
   border: solid black;
-}
+  border-width: thin;
+  }
 
 .sample-body {
   font-style: italic;
 }
 
-.week-1 {
+.week {
   padding: 0.75rem 0;
 }
 
-.week-2 {
-  padding: 0.75rem 0;
+h3 {
+  margin: 0;
 }
 
-.week-3 {
-  padding: 0.75rem 0;
+p {
+  margin: 0;
 }
 
 .images {
   display: block;
   margin: auto;
-  width: 10%;
+  padding: 0;
+  transition: transform 2s;
+  transform: rotate(360deg);
 }
 
 .page-nav {
@@ -95,7 +98,12 @@ article {
   font-family: monospace;
 }
 
-.sample-nav:nth-child(n+1) {
+.project-list {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  padding-top: 0.25rem;
 }
 
 /*visited link*/
@@ -114,7 +122,7 @@ article {
 .footer {
   font-style: italic;
   background-color: #313B74;
-  margin: 0;
+  margin-top: 0.75rem;
   color: white;
   text-align: center;
 }
@@ -125,4 +133,14 @@ article {
 
 .social-media {
   margin: 0;
+}
+
+.section-header {
+  animation: 1s animateborder ease infinite alternate;
+  position: relative;
+}
+
+@keyframes animateborder {
+  0% { top: -15px; }
+  100% {top: 15px; }
 }
