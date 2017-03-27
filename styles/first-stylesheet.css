@@ -2,11 +2,13 @@
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
-  margin: 1;
-  padding: 1;
+#main {
+  margin: 2rem;
+  padding: 1rem 1rem 0rem 1rem;
 }
 
 .container {
@@ -57,30 +59,23 @@ html, body {
 }
 
 .week {
-  border: solid black;
+  border: solid grey;
   border-width: thin;
-  margin: 1rem;
-  }
-
-.sample-body {
-  font-style: italic;
-}
-
-.week {
-  padding: 0.75rem 0;
+  padding: 0.75rem;
+  margin: 0.75rem 0;
 }
 
 h3 {
-  margin: 0.75rem;
+  margin: 0;
 }
 
+.sample-body {
+  padding: 0.75rem 0;
+}
 
 .images {
   display: block;
   margin: auto;
-  padding: 0;
-  transition: transform 2s;
-  transform: rotate(360deg);
 }
 
 .project-list {
@@ -90,6 +85,11 @@ h3 {
   padding: 1rem 0;
 }
 
+.social-media {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 /*visited link*/
 .facebook-logo:visited {
   color: #3b5998;
@@ -99,7 +99,7 @@ h3 {
   color: #0077B5;
 }
 
-.github-logo {
+.github-logo:visited {
   color: #181717;
 }
 
@@ -107,8 +107,15 @@ h3 {
   font-style: italic;
   background-color: #313B74;
   margin-top: 0.75rem;
+  padding: 1rem;
   color: white;
   text-align: center;
+}
+
+.connect {
+  font-size: small;
+  margin: 0;
+  padding: 0;
 }
 
 .email {
@@ -121,15 +128,18 @@ h3 {
 
 .week:nth-child(even) {
   background-color: lightgrey;
-  margin: ;
+}
+
+.week:last-child {
+  margin: 0.75rem 0 0 0;
 }
 
 .section-header {
-  animation: 1s animateborder ease infinite alternate;
+  animation: 1.5s animateborder ease infinite alternate;
   position: relative;
 }
 
 @keyframes animateborder {
-  0% { top: -15px; }
-  100% {top: 15px; }
+  0% { top: -25px; }
+  100% {top: 0px; }
 }
