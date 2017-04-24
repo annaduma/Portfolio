@@ -42,13 +42,13 @@
 
       <form class="form">
         <label>What is the main goal of visitors who use your website?
-          <input type="text" name="visitor-goals">
+          <input type="text" name="visitor-goals" required>
         </label>
 
         <fieldset>
           <legend>How many unique visitors does your website receive daily?</legend>
             <label>
-              <input type="radio" name="visitor-num" value="0-25">
+              <input type="radio" name="visitor-num" value="0-25" required>
               0-25 visitors
             </label>
             <label>
@@ -62,17 +62,33 @@
         </fieldset>
 
         <fieldset>
-          <legend>Which
+          <legend>What are your current concerns about your website?</legend>
+            <label>
+              <input type="checkbox" name="concerns" value="visitor-count">
+              Not enough visitors
+            </label>
+            <label>
+              <input type="checkbox" name="concerns" value="visitor-time">
+              Visitors don't spend enough time on the website
+            </label>
+            <label>
+              <input type="checkbox" name="concerns" value="visitor-checkout">
+              Visitors don't complete checking out their cart items
+            </label>
+            <label>
+              <input type="text" name="other">
+              Other: Please explain
+            </label>
         </fieldset>
 
+        <fieldset>
+          <legend>How many unique visitors do you want per day?</legend>
+            <input type="number" min="1" max="100000" name="visitors-daily" required>
+        </fieldset>
 
-
-
+        <input type="submit" name="submit" value="Submit Form">
       </form>
-
-
     </main>
-
 
     <div class="social-media">
       <p class="connect">
@@ -87,8 +103,5 @@
       <p>Created by: Anna Duma</p>
       <p>Contact information: <a class="email" href="mailto:aduma@uw.edu.com">aduma@uw.edu.com</a>.</p>
     </footer>
-  </body>
-
-
   </body>
 </html>
