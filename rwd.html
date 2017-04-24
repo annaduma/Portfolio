@@ -27,10 +27,10 @@
             <p class="sample-body">
               Responsive web design (RWD) is an approach every web designer should consider when building a web page. RWD involves creating a web page using flexible images and layouts that detect and adjust the layout of the web page when viewed across multiple browsers or devices. A web page built with RWD in mind will resize a web page layout based on browser size or device size, providing users with a positive viewing experience. This means that users can resize a browser window or view a web page on a device of any size and have all components of the web page resize accordingly to fit their screen.
             </p>
-            <p>
+            <p class="sample-body">
               Visitors to a web page want a consistent experience across browsers and devices. There is an expectation that a web page should load and resize correctly, regardless of browser or device used. When this expectation is not met, this can affect a visitor’s experience, and ultimately impact your website’s performance. RWD can help your web page reach a wider audience and provide visitors with the viewing experience they expect when viewing a web page across various browsers or devices.
             </p>
-            <p>
+            <p class="sample-body">
               Fill out the form below to learn how you can use responsive web design to provide your website’s visitors with a positive viewing experience.
             </p>
             <p><a href="#top">Back to top</a></p>
@@ -38,13 +38,15 @@
         </div>
       </div>
 
-      <form class="form">
-        <label>What is the main goal of visitors who use your website?
+      <form>
+      <div class="form-1">
+        <label class="questions">What is the main goal of visitors who use your website?
           <input type="text" name="visitor-goals" required>
         </label>
+      </div>
 
-        <fieldset>
-          <legend>How many unique visitors does your website receive daily?</legend>
+        <fieldset class="form-2">
+          <legend class="questions">How many unique visitors visit your website daily?</legend>
             <label>
               <input type="radio" name="visitor-num" value="0-25" required>
               0-25 visitors
@@ -59,11 +61,11 @@
             </label>
         </fieldset>
 
-        <fieldset>
-          <legend>What are your current concerns about your website?</legend>
+        <fieldset class="form-3">
+          <legend class="questions">What are your current concerns about your website?</legend>
             <label>
               <input type="checkbox" name="concerns" value="visitor-count">
-              Not enough visitors
+              Not enough unique visitors
             </label>
             <label>
               <input type="checkbox" name="concerns" value="visitor-time">
@@ -71,20 +73,20 @@
             </label>
             <label>
               <input type="checkbox" name="concerns" value="visitor-checkout">
-              Visitors don't complete checking out their cart items
-            </label>
-            <label>
-              <input type="text" name="other">
-              Other: Please explain
+              Visitors don't buy all items in their shopping cart
             </label>
         </fieldset>
 
-        <fieldset>
-          <legend>How many unique visitors do you want per day?</legend>
+        <fieldset class="form-4">
+          <legend class="questions">How many unique visitors do you want to visit your website per day?</legend>
             <input type="number" min="1" max="100000" name="visitors-daily" required>
         </fieldset>
 
-        <input type="submit" name="submit" value="Submit Form">
+        <label class="questions">Other comments
+          <textarea name="other-comments"></textarea>
+        </label>
+
+        <input class="submit" type="submit" name="submit" value="Submit Form">
       </form>
     </main>
 
